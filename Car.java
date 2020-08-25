@@ -87,6 +87,22 @@ public class Car {
 		   speed = speed + time*a;
 		   position += time*speed;
 		} 
+		  */
+	public void FYCJ(double time){
+		   if (tooSlow()){
+		      acceleratorOn = true;
+		      brakeOn = false;
+		      }
+		   if (tooFast()){
+		      brakeOn = true;
+		      acceleratorOn = false;
+		      }
+		   double a = 0.0;
+		   if (acceleratorOn) a += accelerationPower;
+		   if (brakeOn) a -= brakePower;
+		   speed = speed + time*a;
+		   position += time*speed;
+		} 
 	}
 
 

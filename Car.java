@@ -88,7 +88,7 @@ public class Car {
 		   position += time*speed;
 		} 
 		  */
-	public void FENGSHUI(double time){
+	public void FENGSHUi(double time){//add some comments
 		   if (tooSlow()){
 		      acceleratorOn = true;
 		      brakeOn = false;

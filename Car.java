@@ -103,6 +103,10 @@ public class Car {
 		   speed = speed + time*a;
 		   position += time*speed;
 		} 
+		public void print(){//add some comments
+		   
+		   System.out.println("cool");
+		} 
 	}
 
 
